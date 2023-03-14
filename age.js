@@ -1,13 +1,31 @@
-const welcomeFriend = (names, years) => {
-    return console.log(`Welcome to ${names[0]}, you are ${years(year[0])} years old.
-    , ${names[1]}, you are ${years(year[1])} years old.
-    , and ${names[2]}, you are ${years(year[2])} years old.
-    `);
+const person1 = {
+    firstName: 'Poon',
+    ageYear: 1990
 }
 
+const person2 = {
+    firstName: 'Yee',
+    ageYear: 1995
+}
+
+const person3 = {
+    firstName: 'Milk',
+    ageYear: 2000
+}
+
+
 const years = (year) => 2023 - year;
-years(year[0]);
-const friends = ['John', 'Jane', 'Mary'];
-const year = [1990, 1995, 2000];
-welcomeFriend(friends);
-// console.log(ages(1965));
+// console.log(1990);
+
+const WelcomeFriend = () => { 
+    console.log(`Welcome ${person1.firstName}, you are ${years(person1.ageYear)}. Welcome ${person2.firstName}, you are ${years(person2.ageYear)}. Welcome ${person3.firstName}, you are ${years(person3.ageYear)}.`); 
+}
+// console.log(years(person1.ageYear));
+// console.log(person1.firstName);
+
+// console.log(years(person2.ageYear));
+// console.log(person2.firstName);
+
+// console.log(years(person3.ageYear));
+// console.log(person3.firstName);
+WelcomeFriend();
